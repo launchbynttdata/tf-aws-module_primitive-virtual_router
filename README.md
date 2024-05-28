@@ -1,4 +1,4 @@
-# tf-aws-module-appmesh_virtual_router
+# tf-aws-module_primitive-appmesh_virtual_router
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
