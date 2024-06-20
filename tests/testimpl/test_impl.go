@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestDoesAppmeshRouteExist(t *testing.T, ctx types.TestContext) {
+func TestDoesAppmeshRouterExist(t *testing.T, ctx types.TestContext) {
 	appmeshClient := appmesh.NewFromConfig(GetAWSConfig(t))
 
 }

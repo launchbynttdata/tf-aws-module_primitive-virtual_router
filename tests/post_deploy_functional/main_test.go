@@ -26,7 +26,7 @@ const (
 	infraTFVarFileNameDefault        = "test.tfvars"
 )
 
-func TestEcsAppmeshPlatformModule(t *testing.T) {
+func TestEcsAppmeshVirtualRouterModule(t *testing.T) {
 
 	ctx := types.CreateTestContextBuilder().
 		SetTestConfig(&testimpl.ThisTFModuleConfig{}).
@@ -34,5 +34,5 @@ func TestEcsAppmeshPlatformModule(t *testing.T) {
 		SetTestConfigFileName(infraTFVarFileNameDefault).
 		Build()
 
-	lib.RunSetupTestTeardown(t, *ctx, testimpl.TestDoesAppmeshRouteExist)
+	lib.RunSetupTestTeardown(t, *ctx, testimpl.TestDoesAppmeshRouterExist)
 }
