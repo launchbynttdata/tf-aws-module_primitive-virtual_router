@@ -40,4 +40,5 @@ No resources.
 | <a name="output_id"></a> [id](#output\_id) | ID of the Virtual router. |
 | <a name="output_arn"></a> [arn](#output\_arn) | ARN of the Virtual router |
 | <a name="output_name"></a> [name](#output\_name) | Name of the Virtual router |
+| <a name="output_mesh_name"></a> [mesh\_name](#output\_mesh\_name) | Name of the App Mesh |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
