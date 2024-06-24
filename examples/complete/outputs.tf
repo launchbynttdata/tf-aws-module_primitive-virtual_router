@@ -24,3 +24,8 @@ output "name" {
   description = "Name of the Virtual router"
   value       = module.virtual_router.name
 }
+
+output "mesh_name" {
+  description = "Name of the App Mesh"
+  value       = module.appmesh.name
+}

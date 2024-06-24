@@ -10,8 +10,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+module "appmesh" {
+  source = "git::https://github.com/launchbynttdata/tf-aws-module_primitive-appmesh?ref=1.0.1"
+  name   = var.app_mesh_name
+}
+
 module "virtual_router" {
-  source = "../.."
+  source     = "../.."
+  depends_on = [module.appmesh]
 
   name          = var.name
   app_mesh_name = var.app_mesh_name

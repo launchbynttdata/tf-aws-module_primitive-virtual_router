@@ -3,7 +3,11 @@
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.0, <= 1.5.5 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.4.3 |
 
 ## Providers
 
@@ -13,6 +17,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
+| <a name="module_appmesh"></a> [appmesh](#module\_appmesh) | git::https://github.com/launchbynttdata/tf-aws-module_primitive-appmesh | 1.0.1 |
 | <a name="module_virtual_router"></a> [virtual\_router](#module\_virtual\_router) | ../.. | n/a |
 
 ## Resources
@@ -35,4 +40,5 @@ No resources.
 | <a name="output_id"></a> [id](#output\_id) | ID of the Virtual router. |
 | <a name="output_arn"></a> [arn](#output\_arn) | ARN of the Virtual router |
 | <a name="output_name"></a> [name](#output\_name) | Name of the Virtual router |
+| <a name="output_mesh_name"></a> [mesh\_name](#output\_mesh\_name) | Name of the App Mesh |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
