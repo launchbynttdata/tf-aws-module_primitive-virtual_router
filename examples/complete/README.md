@@ -17,7 +17,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_appmesh"></a> [appmesh](#module\_appmesh) | git::https://github.com/launchbynttdata/tf-aws-module_primitive-appmesh | 1.0.1 |
+| <a name="module_appmesh"></a> [appmesh](#module\_appmesh) | terraform.registry.launch.nttdata.com/module_primitive/appmesh/aws | ~> 1.0 |
 | <a name="module_virtual_router"></a> [virtual\_router](#module\_virtual\_router) | ../.. | n/a |
 
 ## Resources

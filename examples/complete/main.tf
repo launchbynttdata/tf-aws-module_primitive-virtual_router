@@ -11,8 +11,9 @@
 // limitations under the License.
 
 module "appmesh" {
-  source = "git::https://github.com/launchbynttdata/tf-aws-module_primitive-appmesh?ref=1.0.1"
-  name   = var.app_mesh_name
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/appmesh/aws"
+  version = "~> 1.0"
+  name    = var.app_mesh_name
 }
 
 module "virtual_router" {
