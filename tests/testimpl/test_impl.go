@@ -13,10 +13,10 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestDoesAppmeshRouterExist(t *testing.T, ctx types.TestContext) {
+func TestComposableDoesAppmeshRouterExist(t *testing.T, ctx types.TestContext) {
 	appmeshClient := appmesh.NewFromConfig(GetAWSConfig(t))
-	routerName := terraform.Output(t, ctx.TerratestTerraformOptions(), "name")
-	meshName := terraform.Output(t, ctx.TerratestTerraformOptions(), "mesh_name")
+	routerName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "name")
+	meshName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "mesh_name")
 
 	output, err := appmeshClient.DescribeVirtualRouter(context.TODO(), &appmesh.DescribeVirtualRouterInput{
 		MeshName:          &meshName,
