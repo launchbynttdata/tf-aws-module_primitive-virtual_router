@@ -26,7 +26,9 @@ const (
 	infraTFVarFileNameDefault        = "test.tfvars"
 )
 
-func TestEcsAppmeshVirtualRouterModule(t *testing.T) {
+// TestEcsAppmeshVirtualRouterModuleReadOnly validates deployed infrastructure
+// without creating, mutating, or destroying Terraform-managed resources.
+func TestEcsAppmeshVirtualRouterModuleReadOnly(t *testing.T) {
 
 	ctx := types.CreateTestContextBuilder().
 		SetTestConfig(&testimpl.ThisTFModuleConfig{}).
