@@ -35,5 +35,5 @@ func TestEcsAppmeshVirtualRouterModule(t *testing.T) {
 		SetTestSpecificFlags(map[string]types.TestFlags{}).
 		Build()
 
-	lib.RunNonDestructiveTest(t, *ctx, testimpl.TestComposableDoesAppmeshRouterExist)
+	lib.RunNonDestructiveTest(t, *ctx, testimpl.TestComposableVirtualRouterReadOnly)
 }
