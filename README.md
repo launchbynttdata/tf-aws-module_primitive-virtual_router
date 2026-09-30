@@ -13,7 +13,7 @@ This module creates the router and its listener port mappings only — it does n
 
 ```hcl
 module "virtual_router" {
-  source = "github.com/launchbynttdata/tf-aws-module_primitive-virtual_router?ref=1.0.0"
+  source = "github.com/launchbynttdata/tf-aws-module_primitive-virtual_router?ref=2.0.0"
 
   name          = "demo-router"
   app_mesh_name = "demo-platform-useast2-sandbox-000-mesh-000"
