@@ -34,5 +34,5 @@ func TestEcsAppmeshVirtualRouterModule(t *testing.T) {
 		SetTestConfigFileName(infraTFVarFileNameDefault).
 		Build()
 
-	lib.RunSetupTestTeardown(t, *ctx, testimpl.TestComposableDoesAppmeshRouterExist)
+	lib.RunSetupTestTeardown(t, *ctx, testimpl.TestComposableVirtualRouter)
 }
